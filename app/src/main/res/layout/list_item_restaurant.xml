@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/shop_info"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#fff"
+                android:scaleType="fitXY"/>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/canting_zhuangtai_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/can_ding_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ding_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    android:text="订"
+                    android:textColor="#fff"
+                    android:textSize="10sp"/>
+            </FrameLayout>
+
+            <FrameLayout
+
+                android:id="@+id/can_dian_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/dian_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    android:text="点"
+
+                    android:textColor="#fff"
+                    android:textSize="10sp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/can_pai_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/pai_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    android:text="排"
+                    android:textColor="#fff"
+                    android:textSize="10sp"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/canting_bacground_jianbian"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/shop_pic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitXY"
+                tools:src="@mipmap/ic_launcher"/>
+
+
+            <TextView
+                android:id="@+id/shop_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/shop_pic"
+                android:layout_toRightOf="@id/shop_pic"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                tools:text="商户名称"/>
+
+            <TextView
+                android:id="@+id/shop_dec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/shop_pic"
+                android:layout_toRightOf="@id/shop_pic"
+                android:gravity="center_vertical"
+                android:textColor="#ccffffff"
+                android:textSize="14sp"
+                tools:text="地址"/>
+
+            <LinearLayout
+                android:id="@+id/go_shop_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:background="@mipmap/canting_go_image"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

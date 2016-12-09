@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="building_id">
+        <item>全部楼层</item>
+        <item>B1</item>
+        <item>1F</item>
+        <item>2F</item>
+        <item>3F</item>
+        <item>4F</item>
+        <item>5F</item>
+        <item>8F</item>
+    </string-array>
+    <string-array name="keyword">
+        <item>全部菜系</item>
+        <item>世界美食</item>
+        <item>零食美点</item>
+        <item>中式盛馔</item>
+        <item>咖啡/快餐</item>
+        <item>水电费</item>
+    </string-array>
+
+</resources>
