@@ -10,29 +10,65 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        ndk {
-
-            moduleName"hello"
-
-            ldLibs "log", "z", "m"
-
-            abiFilters "armeabi", "armeabi-v7a", "x86"
-
+//        ndk {
+//
+//            moduleName"hello"
+//
+//            ldLibs "log", "z", "m"
+//
+//            abiFilters "armeabi"
+//
+//        }
+    }
+    signingConfigs {
+        release {
+            keyAlias 'release'
+            keyPassword '000000'
+            storeFile file('key/release.jks')
+            storePassword '000000'
+        }
+        debug {
+            keyAlias 'debug'
+            keyPassword '000000'
+            storeFile file('key/debug.jks')
+            storePassword '000000'
         }
     }
     buildTypes {
         release {
+            //是否开启混淆
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //是否删除无用的资源
+            shrinkResources false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
+            debuggable true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        // 防止在发布的时候出现因MissingTranslation导致Build Failed!
+        disable 'MissingTranslation'
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
         }
     }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
     compile 'com.android.support:appcompat-v7:25.0.1'
     testCompile 'junit:junit:4.12'
     compile project(':library')
@@ -42,4 +78,5 @@ dependencies {
     compile 'com.jakewharton:butterknife:5.1.1'
     compile 'com.squareup.picasso:picasso:2.3.2'
     compile project(':flashtext')
+    compile files('libs/AMap2DMap_2.9.3_AMapSearch_3.6.1_AMapLocation_3.2.0_20161205.jar')
 }

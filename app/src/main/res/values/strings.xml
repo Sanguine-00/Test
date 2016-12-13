@@ -2,4 +2,6 @@
     <string name="app_name">Test</string>
     <string name="food">美食</string>
     <string name="animation">动画练习</string>
+    <string name="btn_shake">摇一摇活动</string>
+    <string name="openMap">打开高德地图</string>
 </resources>

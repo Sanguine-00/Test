@@ -108,4 +108,23 @@
         myFistView:textSize="16sp"
         myFistView:textColor="#de0"
         myFistView:myText="123123123123"></com.sanguine.zhang.flashtext.MyFirstView>
+
+    <Button
+        android:id="@+id/btn_shake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_shake"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_mapView"
+        android:text="@string/openMap"/>
+
+    <ImageView
+        android:id="@+id/image_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_location"/>
 </LinearLayout>
