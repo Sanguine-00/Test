@@ -23,6 +23,7 @@ import com.example.test.animation.AnimationActivity;
 import com.example.test.animation.ShakeActivity;
 import com.example.test.map.MapActivity;
 import com.example.test.neonlamp.NeonLampViewActivity;
+import com.example.test.radar.RadarActivity;
 import com.example.test.suspend.Main2Activity;
 import com.sanguine.zhang.flashtext.NeonLampView;
 
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_mapView;
     private Button btn_suspend;
     private Button btn_NeonLampViewActivity;
+    private Button btn_RadarViewActivity;
     private ImageView mImageView;
 
 
@@ -102,6 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnStartNewActivity = (Button) this.findViewById(R.id.startCanTingActivity);
         mBtnStartAnimationActivity = (Button) this.findViewById(R.id.startAnimationActivity);
         btn_NeonLampViewActivity = (Button) findViewById(R.id.btn_NeonLampViewActivity);
+        btn_RadarViewActivity = (Button) findViewById(R.id.btn_RadarViewActivity);
         btn_suspend = (Button) this.findViewById(R.id.btn_suspend);
         mBtnShake = (Button) findViewById(R.id.btn_shake);
         btn_mapView = (Button) findViewById(R.id.btn_mapView);
@@ -120,6 +123,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_mapView.setOnClickListener(this);
         btn_suspend.setOnClickListener(this);
         btn_NeonLampViewActivity.setOnClickListener(this);
+        btn_RadarViewActivity.setOnClickListener(this);
     }
 
 
@@ -197,6 +201,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_NeonLampViewActivity:
                 intent = new Intent(MainActivity.this, NeonLampViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_RadarViewActivity:
+                intent = new Intent(MainActivity.this, RadarActivity.class);
                 startActivity(intent);
                 break;
         }

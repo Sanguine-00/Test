@@ -10,130 +10,148 @@
 	android:padding="5dip"
 	tools:context="com.example.test.MainActivity">
 
-	<TextView
-		android:id="@+id/tvHelloworldFromC"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:gravity="center"
-		android:text="点我弹出Toast"/>
+	<ScrollView android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:padding="5dip">
 
 
-	<LinearLayout
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="50dp"
-		android:gravity="center"
-		android:orientation="horizontal">
-
-		<EditText
-			android:id="@+id/etX"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:gravity="center"
-			android:inputType="number"/>
-
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:gravity="center"
-			android:text="+"/>
-
-		<EditText
-			android:id="@+id/etY"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:gravity="center"
-			android:inputType="number"/>
-
-		<Button
-			android:id="@+id/btnCalculate"
-			android:layout_width="0dp"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:gravity="center"
-			android:text="="/>
-
-		<TextView
-			android:id="@+id/tvResult"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:gravity="center"/>
-
-	</LinearLayout>
-
-	<LinearLayout
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:orientation="horizontal">
-
-		<EditText
-			android:id="@+id/etStr"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-		/>
-
-		<Button
-			android:id="@+id/btnSign"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:text="加密"/>
+			<TextView
+				android:id="@+id/tvHelloworldFromC"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="点我弹出Toast"/>
 
 
-	</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="50dp"
+				android:gravity="center"
+				android:orientation="horizontal">
 
-	<Button
-		android:id="@+id/startCanTingActivity"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="@string/food"/>
+				<EditText
+					android:id="@+id/etX"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:inputType="number"/>
 
-	<Button
-		android:id="@+id/startAnimationActivity"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="@string/animation"/>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:text="+"/>
 
-	<com.sanguine.zhang.flashtext.MyFirstView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_gravity="center_horizontal"
-		android:paddingTop="10dp"
-		myFistView:myText="123123123123"
-		myFistView:textColor="#de0"
-		myFistView:textSize="16sp"></com.sanguine.zhang.flashtext.MyFirstView>
+				<EditText
+					android:id="@+id/etY"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:inputType="number"/>
 
-	<Button
-		android:id="@+id/btn_shake"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="@string/btn_shake"/>
+				<Button
+					android:id="@+id/btnCalculate"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:text="="/>
 
-	<Button
-		android:id="@+id/btn_mapView"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="@string/openMap"/>
+				<TextView
+					android:id="@+id/tvResult"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"/>
 
-	<ImageView
-		android:id="@+id/image_loc"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_gravity="center_horizontal"
-		android:src="@drawable/ic_north"/>
-	<Button
-		android:id="@+id/btn_suspend"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="@string/openSuspend"/>
-	<Button
-		android:id="@+id/btn_NeonLampViewActivity"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:text="@string/btn_NeonLampViewActivity"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<EditText
+					android:id="@+id/etStr"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				/>
+
+				<Button
+					android:id="@+id/btnSign"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="加密"/>
+
+
+			</LinearLayout>
+
+			<Button
+				android:id="@+id/startCanTingActivity"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/food"/>
+
+			<Button
+				android:id="@+id/startAnimationActivity"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/animation"/>
+
+			<com.sanguine.zhang.flashtext.MyFirstView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:paddingTop="10dp"
+				myFistView:myText="123123123123"
+				myFistView:textColor="#de0"
+				myFistView:textSize="16sp"></com.sanguine.zhang.flashtext.MyFirstView>
+
+			<Button
+				android:id="@+id/btn_shake"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/btn_shake"/>
+
+			<Button
+				android:id="@+id/btn_mapView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/openMap"/>
+
+			<ImageView
+				android:id="@+id/image_loc"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:src="@drawable/ic_north"/>
+			<Button
+				android:id="@+id/btn_suspend"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/openSuspend"/>
+			<Button
+				android:id="@+id/btn_NeonLampViewActivity"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/btn_NeonLampViewActivity"/>
+			<Button
+				android:id="@+id/btn_RadarViewActivity"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/btn_NeonLampViewActivity"/>
+		</LinearLayout>
+	</ScrollView>
 </LinearLayout>

@@ -19,6 +19,7 @@ import static android.R.attr.y;
 /**
  * Created by 张高强 on 2016/12/19.
  * 邮箱: zhang.gaoqiang@mobcb.com
+ * 可以做比重图用
  */
 
 public class NeonLampView extends View implements View.OnTouchListener {
