@@ -22,7 +22,11 @@ import com.example.test.jingfeng.CanTingActivity;
 import com.example.test.animation.AnimationActivity;
 import com.example.test.animation.ShakeActivity;
 import com.example.test.map.MapActivity;
+import com.example.test.neonlamp.NeonLampViewActivity;
 import com.example.test.suspend.Main2Activity;
+import com.sanguine.zhang.flashtext.NeonLampView;
+
+import static com.example.test.R.id.btn_NeonLampViewActivity;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -40,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnShake;
     private Button btn_mapView;
     private Button btn_suspend;
+    private Button btn_NeonLampViewActivity;
     private ImageView mImageView;
 
 
@@ -96,6 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnCalculate = (Button) this.findViewById(R.id.btnCalculate);
         mBtnStartNewActivity = (Button) this.findViewById(R.id.startCanTingActivity);
         mBtnStartAnimationActivity = (Button) this.findViewById(R.id.startAnimationActivity);
+        btn_NeonLampViewActivity = (Button) findViewById(R.id.btn_NeonLampViewActivity);
         btn_suspend = (Button) this.findViewById(R.id.btn_suspend);
         mBtnShake = (Button) findViewById(R.id.btn_shake);
         btn_mapView = (Button) findViewById(R.id.btn_mapView);
@@ -113,6 +119,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnShake.setOnClickListener(this);
         btn_mapView.setOnClickListener(this);
         btn_suspend.setOnClickListener(this);
+        btn_NeonLampViewActivity.setOnClickListener(this);
     }
 
 
@@ -186,6 +193,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tvHelloworldFromC:
                 Toast.makeText(MainActivity.this, new JniTest().helloworldFromC(), Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.btn_NeonLampViewActivity:
+                intent = new Intent(MainActivity.this, NeonLampViewActivity.class);
+                startActivity(intent);
                 break;
         }
     }
