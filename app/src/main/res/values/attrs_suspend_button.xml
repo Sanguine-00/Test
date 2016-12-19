@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SuspendButtonLayout">
+        <!-- 上下方留出的空间，默认分别小于宽高中较小者的一半 -->
+        <attr name="marginY" format="dimension"/>
+        <!--左右方留出的空间,默认为0,设置后才有值-->
+        <attr name="marginX" format="dimension"/>
+        <!-- 按钮的大小，默认小于distance -->
+        <attr name="imageSize" format="dimension"/>
+        <!-- 按钮图片 -->
+        <attr name="imageMainOpen" format="reference"/>
+        <attr name="imageMainClose" format="reference"/>
+    </declare-styleable>
+</resources>

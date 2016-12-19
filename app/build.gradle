@@ -10,15 +10,15 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-//        ndk {
-//
-//            moduleName"hello"
-//
-//            ldLibs "log", "z", "m"
-//
-//            abiFilters "armeabi"
-//
-//        }
+        ndk {
+
+            moduleName"hello"
+
+            ldLibs "log", "z", "m"
+
+            abiFilters "armeabi"
+
+        }
     }
     signingConfigs {
         release {
@@ -78,5 +78,6 @@ dependencies {
     compile 'com.jakewharton:butterknife:5.1.1'
     compile 'com.squareup.picasso:picasso:2.3.2'
     compile project(':flashtext')
-    compile files('libs/AMap2DMap_2.9.3_AMapSearch_3.6.1_AMapLocation_3.2.0_20161205.jar')
+    compile files('libs/AMap3DMap_4.1.3_AMapNavi_1.9.4_AMapSearch_3.6.1_AMapLocation_3.2.0_20161208.jar')
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
 }

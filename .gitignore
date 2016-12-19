@@ -8,7 +8,6 @@
 flashtext/build
 /captures
 .externalNativeBuild
-app/libs/
 app/mirror/.gen/cache/classes/
 app/mirror/.gen/cache/crunched-pngs/1/
 app/mirror/.gen/cache/crunched-pngs/10/
@@ -22,8 +21,6 @@ app/mirror/.gen/cache/crunched-pngs/7/
 app/mirror/.gen/cache/crunched-pngs/8/
 app/mirror/.gen/cache/crunched-pngs/9/
 app/mirror/.res/
-flashtext/src/main/java/
-flashtext/src/main/res/drawable/
 library/build/generated/assets/
 library/build/generated/res/
 library/build/generated/source/aidl/

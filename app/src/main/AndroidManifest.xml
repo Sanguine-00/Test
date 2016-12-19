@@ -19,18 +19,17 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
-    <!--//定位包、导航包需要的额外权限（注：基础权限也需要）-->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- //定位包、导航包需要的额外权限（注：基础权限也需要） -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
 
     <!-- 高德地图需要的权限end -->
     <application
@@ -43,6 +42,7 @@
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="93e68c70f69581c933ec257c0bf8f93a"/>
+
         <service android:name="com.amap.api.location.APSService"/>
 
         <activity android:name=".MainActivity">
@@ -52,13 +52,23 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".android.CanTingActivity">
+        <activity android:name=".jingfeng.CanTingActivity">
         </activity>
         <activity android:name=".animation.AnimationActivity">
         </activity>
         <activity android:name=".animation.ShakeActivity">
         </activity>
         <activity android:name=".map.MapActivity">
+        </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+	 App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+		-->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity android:name=".suspend.Main2Activity">
         </activity>
     </application>
 
