@@ -23,7 +23,6 @@ public class RadarView extends View {
     private Paint mPaint;//画圆的画笔
     private Paint mSaoMiaoPaint;//扫描的画笔
     private float scanSpeed = 5;//扫描速度
-    private float scanAngle;//扫描速度
     private Shader scanShader; // 扫描渲染shader
     private Matrix mMatrix = new Matrix();//矩阵
 
@@ -97,7 +96,6 @@ public class RadarView extends View {
     private Runnable mRunnable = new Runnable() {
         @Override
         public void run() {
-            scanAngle = (scanAngle + scanSpeed) % 360;
             mMatrix.postRotate(scanSpeed, mWidth / 2, mHeight / 2);//旋转矩阵
             invalidate();//通知从新绘制
             postDelayed(mRunnable, 130);//自己调用自己  重复绘制

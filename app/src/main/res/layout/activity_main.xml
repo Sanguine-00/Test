@@ -151,7 +151,12 @@
 				android:id="@+id/btn_RadarViewActivity"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:text="@string/btn_NeonLampViewActivity"/>
+				android:text="@string/btn_RadarLampViewActivity"/>
+			<Button
+				android:id="@+id/btn_ShimmerViewActivity"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/btn_ShimmerViewActivity"/>
 		</LinearLayout>
 	</ScrollView>
 </LinearLayout>

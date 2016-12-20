@@ -7,4 +7,5 @@
 	<string name="openSuspend">打开悬浮球</string>
 	<string name="btn_NeonLampViewActivity">打开霓虹灯</string>
 	<string name="btn_RadarLampViewActivity">打开雷达</string>
+	<string name="btn_ShimmerViewActivity">打开闪烁的字</string>
 </resources>

@@ -74,6 +74,8 @@
 		</activity>
 		<activity android:name=".radar.RadarActivity">
 		</activity>
+		<activity android:name=".shimmer.ShimmerActivity">
+		</activity>
 	</application>
 
 </manifest>

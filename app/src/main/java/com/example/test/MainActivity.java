@@ -24,6 +24,7 @@ import com.example.test.animation.ShakeActivity;
 import com.example.test.map.MapActivity;
 import com.example.test.neonlamp.NeonLampViewActivity;
 import com.example.test.radar.RadarActivity;
+import com.example.test.shimmer.ShimmerActivity;
 import com.example.test.suspend.Main2Activity;
 import com.sanguine.zhang.flashtext.NeonLampView;
 
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnSign;
     private Button mBtnStartNewActivity;
     private Button mBtnStartAnimationActivity;
+    private Button btn_ShimmerViewActivity;
     private Button mBtnShake;
     private Button btn_mapView;
     private Button btn_suspend;
@@ -105,6 +107,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnStartAnimationActivity = (Button) this.findViewById(R.id.startAnimationActivity);
         btn_NeonLampViewActivity = (Button) findViewById(R.id.btn_NeonLampViewActivity);
         btn_RadarViewActivity = (Button) findViewById(R.id.btn_RadarViewActivity);
+        btn_ShimmerViewActivity = (Button) findViewById(R.id.btn_ShimmerViewActivity);
         btn_suspend = (Button) this.findViewById(R.id.btn_suspend);
         mBtnShake = (Button) findViewById(R.id.btn_shake);
         btn_mapView = (Button) findViewById(R.id.btn_mapView);
@@ -124,6 +127,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_suspend.setOnClickListener(this);
         btn_NeonLampViewActivity.setOnClickListener(this);
         btn_RadarViewActivity.setOnClickListener(this);
+        btn_ShimmerViewActivity.setOnClickListener(this);
     }
 
 
@@ -205,6 +209,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_RadarViewActivity:
                 intent = new Intent(MainActivity.this, RadarActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_ShimmerViewActivity:
+                intent = new Intent(MainActivity.this, ShimmerActivity.class);
                 startActivity(intent);
                 break;
         }
